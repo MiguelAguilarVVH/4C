@@ -1,0 +1,84 @@
+/* Resetear márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo claro y tipografía moderna */
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Estilo del título principal */
+h1 {
+    font-size: 2.5rem;
+    color: #5a8f7d; /* Verde pastel suave */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilo de los demás títulos */
+h2, h3, h4, h5 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+    color: #6b6f82; /* Gris suave */
+    font-weight: normal;
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #5a8f7d; /* Verde pastel */
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px 28px;
+    margin: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover en los botones */
+button:hover {
+    background-color: #4b7e64; /* Verde más oscuro */
+    transform: scale(1.05);
+}
+
+/* Efecto de foco en los botones */
+button:focus {
+    outline: none;
+}
+
+/* Estilo de los títulos al pasar el ratón */
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover {
+    color: #4b7e64; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilo de pie de página */
+footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 1rem;
+    color: #aaa;
+    text-align: center;
+}
+
+/* Estilo para el pie de página */
+footer a {
+    color: #5a8f7d;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
