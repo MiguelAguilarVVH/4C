@@ -1,0 +1,45 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML5 -->
+<html> <!-- Inicio del documento HTML -->
+<head> <!-- Sección de cabecera, contiene metadatos -->
+    <title>Calculadora Básica</title> <!-- Título que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS externo -->
+</head>
+<body> <!-- Cuerpo del documento, contiene el contenido visible -->
+    <div class="container"> <!-- Contenedor principal con clase para estilizar -->
+        <h2>Calculadora Básica</h2> <!-- Título de la calculadora -->
+        
+        <!-- Grupo para el primer número -->
+        <div class="form-group"> <!-- Contenedor con clase para estilizar grupos de formulario -->
+            <label for="numero1">Primer número:</label> <!-- Etiqueta para el primer campo -->
+            <input type="number" id="numero1" placeholder="Ingrese el primer número"> <!-- Campo para ingresar el primer número -->
+        </div>
+        
+        <!-- Grupo para el segundo número -->
+        <div class="form-group">
+            <label for="numero2">Segundo número:</label> <!-- Etiqueta para el segundo campo -->
+            <input type="number" id="numero2" placeholder="Ingrese el segundo número"> <!-- Campo para ingresar el segundo número -->
+        </div>
+        
+        <!-- Grupo para seleccionar la operación -->
+        <div class="form-group">
+            <label for="operacion">Seleccione la operación:</label> <!-- Etiqueta para el menú desplegable -->
+            <select id="operacion"> <!-- Menú desplegable para seleccionar la operación -->
+                <option value="suma">Sumar</option> <!-- Opción para sumar -->
+                <option value="resta">Restar</option> <!-- Opción para restar -->
+                <option value="multiplicacion">Multiplicar</option> <!-- Opción para multiplicar -->
+                <option value="division">Dividir</option> <!-- Opción para dividir -->
+            </select>
+        </div>
+        
+        <!-- Botón que ejecuta la función calcular() al hacer clic -->
+        <button onclick="calcular()">Calcular</button>
+        
+        <!-- Div para mostrar el resultado, inicialmente oculto -->
+        <div id="resultado">
+            El resultado es: <span id="valorResultado"></span> <!-- Span donde se mostrará el valor del resultado -->
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Enlace al archivo JavaScript externo -->
+</body>
+</html> <!-- Fin del documento HTML -->

@@ -1,0 +1,54 @@
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente para todo el documento */
+    margin: 20px; /* Añade un margen alrededor de toda la página */
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    max-width: 400px; /* Limita el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Añade espacio interno alrededor del contenido */
+    border: 1px solid #ccc; /* Añade un borde gris claro */
+    border-radius: 5px; /* Redondea las esquinas del contenedor */
+}
+
+/* Estilo para los grupos de formulario */
+.form-group {
+    margin-bottom: 15px; /* Añade espacio debajo de cada grupo */
+}
+
+/* Estilo para las etiquetas */
+label {
+    display: block; /* Hace que las etiquetas ocupen toda la anchura disponible */
+    margin-bottom: 5px; /* Añade espacio debajo de cada etiqueta */
+}
+
+/* Estilo común para inputs, selects y botones */
+input, select, button {
+    width: 100%; /* Hace que ocupen todo el ancho disponible */
+    padding: 8px; /* Añade espacio interno */
+    margin-bottom: 10px; /* Añade espacio debajo de cada elemento */
+}
+
+/* Estilo específico para el botón */
+button {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color de texto blanco */
+    border: none; /* Elimina el borde predeterminado */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+}
+
+/* Estilo para el botón cuando el cursor está encima */
+button:hover {
+    background-color: #45a049; /* Cambia a un verde más oscuro */
+}
+
+/* Estilo para el div de resultado */
+#resultado {
+    margin-top: 20px; /* Añade espacio encima del resultado */
+    padding: 10px; /* Añade espacio interno */
+    border: 1px solid #ddd; /* Añade un borde gris muy claro */
+    border-radius: 5px; /* Redondea las esquinas */
+    display: none; /* Inicialmente oculto, se mostrará mediante JavaScript */
+}
