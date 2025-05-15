@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*outline: solid black 1px;*/
+}
+
+main{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.izquierdo, .derecho{
+    height: 630px;
+}
+
+.izquierdo, .derecho{
+display: flex;
+}
+
+.izquierdo{
+    flex-direction: column;
+    flex: 1.15;
+}
+
+.izq{
+    display: flex;
+    flex: 1;
+}
+
+.sub_izq1{
+    flex-direction: column;
+    display: flex;
+    flex: 6;
+}
+
+.sub_izq_arr{
+    flex: 6;
+}
+
+.sub_izq_abj{
+    flex: 2;
+}
+
+.sub_izq2{
+    flex-direction: column;
+    display: flex;
+    flex: 2;
+}
+
+.sub_izq_box{
+    flex: 1;
+}
+
+.sub_izq3{
+    flex: 2;
+}
+
+.sub_izq4{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+.sub_izq_col{
+    flex: 1;
+}
+
+.derecho{
+    flex-direction: row;
+    flex: 1;
+}
+
+.der{
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+}
+
+.sub_der{
+    display: flex;
+    flex: 1;
+}
+
+.sub_der_box1{
+    flex-direction: column;
+    display: flex;
+    flex: 2;
+}
+
+.sub_der_box{
+    flex: 1;
+}
+
+.sub_der_box2{
+    flex: 1.8;
+}
+
+.sub_der1{
+    flex: 2;
+}
+
+.sub_der2{
+    flex: 6;
+}
+
+.sub_der3{
+    flex: 1;
+}
+
+.boxes{
+    margin: 10px;
+    background-color: #B3B5B4;
+}
