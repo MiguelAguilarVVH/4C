@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.encabezado {
+    margin-bottom: 70px;
+    background-color: #305252;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.encabezado h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.encabezado p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.contenedor {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 0%;
+    background-color: #f5f5f5;
+    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.seccion-principal {
+    background-color: #e67e22;
+    color: white;
+    text-align: center;
+    padding: 50px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.seccion-principal h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.seccion-principal p {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+.contenedor-caracteristicas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-caracteristica {
+    background-color: #d35400;
+    color: white;
+    padding: 40px 25px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+.tarjeta-caracteristica h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.tarjeta-caracteristica p {
+    font-size: 16px;
+}
