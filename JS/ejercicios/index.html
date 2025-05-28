@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1: Registro de Participantes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ejercicio 1: Registro de Participantes</h1>
+        
+        <div class="objetivo">
+            <strong>Objetivo:</strong> Aplicar estructuras condicionales (if), ciclos repetitivos (while) y métodos de manipulación de arreglos (push) para registrar participantes.
+        </div>
+
+        <div class="controls">
+            <input type="text" id="nombreInput" placeholder="Ingrese un nombre o 'salir' para terminar">
+            <button onclick="agregarParticipante()">Agregar Participante</button>
+            <button onclick="reiniciarRegistro()" class="btn-secondary">Reiniciar</button>
+        </div>
+
+        <div class="resultados" id="resultados">
+            <h3>Lista de Participantes:</h3>
+            <div id="listaParticipantes"></div>
+            <div id="totalParticipantes"></div>
+            <div id="mensajeEspecial"></div>
+        </div>
+
+        <div class="consola">
+            <h3> Consola (simulación):</h3>
+            <div id="consola"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

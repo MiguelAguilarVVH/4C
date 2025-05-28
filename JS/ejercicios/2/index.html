@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2: Simulador de Caja Registradora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ejercicio 2: Simulador de Caja Registradora</h1>
+        
+        <div class="objetivo">
+            <strong>Objetivo:</strong> Aplicar estructuras condicionales (if), ciclos repetitivos (for) y métodos de manipulación de arreglos (pop, push) para simular ventas en una caja registradora.
+        </div>
+
+        <div class="tienda-section">
+            <div class="inventario">
+                <h3>Inventario Actual:</h3>
+                <div id="listaProductos"></div>
+                <div id="estadoInventario"></div>
+            </div>
+
+            <div class="controles-venta">
+                <h3>Controles de Venta:</h3>
+                <div class="controls">
+                    <button onclick="simularVenta()" id="btnVender">Vender Producto</button>
+                    <button onclick="simular5Ventas()" id="btnVender5">Simular 5 Ventas</button>
+                    <button onclick="reiniciarInventario()" class="btn-secondary">Reiniciar Inventario</button>
+                </div>
+            </div>
+
+            <div class="reposicion">
+                <h3>Reponer Productos:</h3>
+                <div class="controls">
+                    <input type="text" id="nuevoProducto" placeholder="Nombre del nuevo producto">
+                    <button onclick="reponerProducto()">Reponer</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="resultados">
+            <h3> Resumen de Ventas:</h3>
+            <div id="resumenVentas"></div>
+        </div>
+
+        <div class="consola">
+            <h3>Consola (simulación):</h3>
+            <div id="consola"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
