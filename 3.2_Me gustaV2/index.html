@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Social - Likes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Encabezado de la red social -->
+    <div class="encabezado-red-social">
+        <h2>Network</h2>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="contenedor-principal">
+        <!-- Panel izquierdo con perfil de usuario -->
+        <div class="panel-perfil">
+            <div class="contenedor-avatar">
+                <div class="icono-avatar">👤</div>
+                <a href="#" class="enlace-avatar">Add an avatar</a>
+            </div>
+            <div class="nombre-usuario">James Doe</div>
+        </div>
+
+        <!-- Feed principal -->
+        <div class="contenedor-feed">
+            <h3 class="titulo-feed">Your Feed</h3>
+            
+            <!-- Post 1 - Neil M -->
+            <div class="contenedor-post">
+                <div class="encabezado-post">
+                    <span class="nombre-autor">Neil M</span>
+                    <div class="seccion-likes">
+                        <span class="contador-likes"><span id="likes-neil">9</span> like(s)</span>
+                        <button class="boton-like" onclick="aumentarLikes('neil')">Like</button>
+                    </div>
+                </div>
+                <div class="contenido-post">
+                    I just set up this new discord bot, let me know what you all think. <a href="#" class="enlace-post">link</a>
+                </div>
+            </div>
+
+            <!-- Post 2 - Nichole K -->
+            <div class="contenedor-post">
+                <div class="encabezado-post">
+                    <span class="nombre-autor">Nichole K</span>
+                    <div class="seccion-likes">
+                        <span class="contador-likes"><span id="likes-nichole">12</span> like(s)</span>
+                        <button class="boton-like" onclick="aumentarLikes('nichole')">Like</button>
+                    </div>
+                </div>
+                <div class="contenido-post">
+                    Just finished my <a href="#" class="enlace-post">next comic</a>, check it out.
+                </div>
+            </div>
+
+            <!-- Post 3 - Jim R -->
+            <div class="contenedor-post">
+                <div class="encabezado-post">
+                    <span class="nombre-autor">Jim R</span>
+                    <div class="seccion-likes">
+                        <span class="contador-likes"><span id="likes-jim">9</span> like(s)</span>
+                        <button class="boton-like" onclick="aumentarLikes('jim')">Like</button>
+                    </div>
+                </div>
+                <div class="contenido-post">
+                    I can't stop listening to the <a href="#" class="enlace-post">new album</a>. Who else is liking it?
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel derecho con instrucciones -->
+        <div class="panel-instrucciones">
+            <div class="nota-explicativa">
+                Clicking each like button will increase the number of likes for each post by 1
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
