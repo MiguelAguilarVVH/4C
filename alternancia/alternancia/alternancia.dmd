@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="alternancia" id="EBE5B407-E91B-428E-92B6-32A232E4369F" version="3.5">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 14:56:12 UTC</createdTime>
+<ownerDesignName>alternancia</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>EBE5B407-E91B-428E-92B6-32A232E4369F</designId>
+</OSDM_Design>

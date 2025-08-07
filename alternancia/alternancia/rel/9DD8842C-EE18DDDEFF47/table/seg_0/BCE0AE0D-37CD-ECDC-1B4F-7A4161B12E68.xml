@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BCE0AE0D-37CD-ECDC-1B4F-7A4161B12E68" name="Empleado">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 15:39:31 UTC</createdTime>
+<generatorID>2EF90E8C-0B5C-238B-E517-D103D41FD77F</generatorID>
+<ownerDesignName>alternancia</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_empleado" id="514266A3-2B23-524A-74AA-6A826387E3B4">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 15:39:31 UTC</createdTime>
+<generatorID>F8F67C94-1D8C-AA2A-4DF1-C8BAAE21A946</generatorID>
+<ownerDesignName>alternancia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre_completo" id="04B18395-B5F6-EDA8-29FD-15335632A08D">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 15:39:31 UTC</createdTime>
+<generatorID>C2753682-1BEE-74E4-F635-1EF803D08E98</generatorID>
+<ownerDesignName>alternancia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cargo" id="B5B8BF20-4C2E-8863-B1D4-B9CB36AE1F77">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 15:39:31 UTC</createdTime>
+<generatorID>EAE0F88E-5C04-C883-95FD-45D8330351C8</generatorID>
+<ownerDesignName>alternancia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90 CHAR</dataTypeSize>
+<ownDataTypeParameters>90 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Empresa_ID_empresa" id="716A1AFD-C09F-3F73-AD6D-9E2766BB3681">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 15:39:31 UTC</createdTime>
+<generatorID>0E95B2A7-E0C3-1A92-94F6-9BC1EFBF329D</generatorID>
+<ownerDesignName>alternancia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>99</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="579CC6A7-9153-83DA-336C-7409C247A823" referredColumn="874EE8E7-45E8-DB10-E55F-B7160129A74F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0F109B81-84A1-3727-AF0E-4D1F2592CBE2" name="Empleado_PK">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 15:39:31 UTC</createdTime>
+<generatorID>CB0E857F-3CCB-5AC1-4C18-625C192FDC88</generatorID>
+<ownerDesignName>alternancia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="514266A3-2B23-524A-74AA-6A826387E3B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F52DB98C-1352-94DE-88AD-909CF1EDAE22" name="Empleado_Empresa_FK">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 15:39:31 UTC</createdTime>
+<generatorID>ED5E52A8-0AF4-AC18-256A-A1E1E343AB66</generatorID>
+<ownerDesignName>alternancia</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="716A1AFD-C09F-3F73-AD6D-9E2766BB3681"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

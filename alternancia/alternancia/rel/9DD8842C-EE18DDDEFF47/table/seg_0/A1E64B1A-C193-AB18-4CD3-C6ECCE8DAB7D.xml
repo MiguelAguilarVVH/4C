@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1E64B1A-C193-AB18-4CD3-C6ECCE8DAB7D" name="Empresa">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 15:39:31 UTC</createdTime>
+<generatorID>0FBE1271-72F4-86D0-FB65-D13CE7B97F81</generatorID>
+<ownerDesignName>alternancia</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_empresa" id="874EE8E7-45E8-DB10-E55F-B7160129A74F">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 15:39:31 UTC</createdTime>
+<generatorID>2C814015-1998-B9C5-8425-2246438DD706</generatorID>
+<ownerDesignName>alternancia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>99</dataTypePrecision>
+<ownDataTypeParameters>,99,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="5CF3FA9F-CF4C-D07C-20E1-3679ACF6B008">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 15:39:31 UTC</createdTime>
+<generatorID>05611379-A675-7B83-B249-7206FB76B52F</generatorID>
+<ownerDesignName>alternancia</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rubro" id="9119BB50-81C6-8227-12A1-6E68CA86C74B">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 15:39:31 UTC</createdTime>
+<generatorID>93BD6D58-BEE2-EA69-ECF5-ABC8E34EBC2C</generatorID>
+<ownerDesignName>alternancia</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D84621C-723F-EA2A-D535-A175F4115C70" name="Empresa_PK">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 15:39:31 UTC</createdTime>
+<generatorID>F39065D8-676F-1B7C-4253-07DFA6D86B74</generatorID>
+<ownerDesignName>alternancia</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="874EE8E7-45E8-DB10-E55F-B7160129A74F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

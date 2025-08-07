@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C635EEFC-09B4-9ECD-DAE1-4DD8031CEB3C" name="Libros">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-05 13:39:59 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="559C6EAB-DB48-9B08-9A23-129F606A4B14" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_libros" id="FF7B776C-73C0-E9C3-2911-EB9C72EFB88E">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-05 13:40:06 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="559C6EAB-DB48-9B08-9A23-129F606A4B14" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Categorias" id="A676B739-F39C-21CC-FE02-2A819DF491F9">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-05 13:40:45 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="559C6EAB-DB48-9B08-9A23-129F606A4B14" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Autor" id="8F05E59F-1691-3C7F-8025-937815A3C990">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-05 13:41:06 UTC</createdTime>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="559C6EAB-DB48-9B08-9A23-129F606A4B14" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_biblioteca" id="F31AEF89-794A-B553-8D4C-C3792EDBD9C0">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-05 13:42:52 UTC</createdTime>
+<generatorID>C8A0F2DF-D7BE-D54C-0FB9-F484E30197EB</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<engineerTo>
+<item key="559C6EAB-DB48-9B08-9A23-129F606A4B14" value="true"/>
+</engineerTo>
+<referedAttribute>4B97AB04-E4EC-0117-E28E-1702B4F7E10E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="70C2AEDB-0085-B57B-6EB5-51B10E52CB28" name="Libros">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-05 13:43:27 UTC</createdTime>
+<generatorID>C635EEFC-09B4-9ECD-DAE1-4DD8031CEB3C</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_libros" id="BA486059-A08D-5EEA-926A-AB21B1F824CA">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-05 13:43:27 UTC</createdTime>
+<generatorID>FF7B776C-73C0-E9C3-2911-EB9C72EFB88E</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Categorias" id="64B4C35D-4714-D535-83E5-B31388F1C2FD">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-05 13:43:27 UTC</createdTime>
+<generatorID>A676B739-F39C-21CC-FE02-2A819DF491F9</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Autor" id="ABE11AEC-111A-76AC-C431-FA02C24988A3">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-05 13:43:27 UTC</createdTime>
+<generatorID>8F05E59F-1691-3C7F-8025-937815A3C990</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Biblioteca_ID_biblioteca" id="5CAA9AB5-24EA-713C-5EF2-44EC23AF1E54">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-05 13:43:27 UTC</createdTime>
+<generatorID>F31AEF89-794A-B553-8D4C-C3792EDBD9C0</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2A6B2E3E-6D38-EAF0-892B-01E928261824" referredColumn="CD6172F8-83A6-2375-6AFB-1DEBFC658595"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2690736-3A20-A026-EA12-DAA68EFDF66D" name="Libros_Biblioteca_FK">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-05 13:43:27 UTC</createdTime>
+<generatorID>C8A0F2DF-D7BE-D54C-0FB9-F484E30197EB</generatorID>
+<ownerDesignName>Biblioteca</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5CAA9AB5-24EA-713C-5EF2-44EC23AF1E54"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

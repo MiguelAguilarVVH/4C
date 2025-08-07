@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Empleado Empresa FK" directorySegmentName="seg_0" id="ED5E52A8-0AF4-AC18-256A-A1E1E343AB66">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 15:37:20 UTC</createdTime>
+<ownerDesignName>alternancia</ownerDesignName>
+<engineerTo>
+<item key="9DD8842C-D89A-8F3D-E6A0-EE18DDDEFF47" value="true"/>
+</engineerTo>
+<sourcePk>F39065D8-676F-1B7C-4253-07DFA6D86B74</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0FBE1271-72F4-86D0-FB65-D13CE7B97F81</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2EF90E8C-0B5C-238B-E517-D103D41FD77F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

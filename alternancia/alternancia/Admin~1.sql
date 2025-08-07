@@ -1,0 +1,3 @@
+CREATE USER C##biblioteca IDENTIFIED BY Holitas01;
+GRANT CREATE SESSION TO C##biblioteca;
+GRANT ALL PRIVILEGES TO C##biblioteca;

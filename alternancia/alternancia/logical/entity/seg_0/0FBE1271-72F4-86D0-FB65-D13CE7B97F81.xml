@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0FBE1271-72F4-86D0-FB65-D13CE7B97F81" name="Empresa">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 15:00:22 UTC</createdTime>
+<ownerDesignName>alternancia</ownerDesignName>
+<engineerTo>
+<item key="9DD8842C-D89A-8F3D-E6A0-EE18DDDEFF47" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID empresa" id="2C814015-1998-B9C5-8425-2246438DD706">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 15:00:58 UTC</createdTime>
+<ownerDesignName>alternancia</ownerDesignName>
+<engineerTo>
+<item key="9DD8842C-D89A-8F3D-E6A0-EE18DDDEFF47" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>99</dataTypePrecision>
+<ownDataTypeParameters>,99,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="05611379-A675-7B83-B249-7206FB76B52F">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 15:26:58 UTC</createdTime>
+<ownerDesignName>alternancia</ownerDesignName>
+<engineerTo>
+<item key="9DD8842C-D89A-8F3D-E6A0-EE18DDDEFF47" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Rubro" id="93BD6D58-BEE2-EA69-ECF5-ABC8E34EBC2C">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 15:27:56 UTC</createdTime>
+<ownerDesignName>alternancia</ownerDesignName>
+<engineerTo>
+<item key="9DD8842C-D89A-8F3D-E6A0-EE18DDDEFF47" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F39065D8-676F-1B7C-4253-07DFA6D86B74" name="Empresa_PK">
+<createdBy>alumnoslgr</createdBy>
+<createdTime>2025-08-04 15:26:56 UTC</createdTime>
+<ownerDesignName>alternancia</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9DD8842C-D89A-8F3D-E6A0-EE18DDDEFF47" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2C814015-1998-B9C5-8425-2246438DD706</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
