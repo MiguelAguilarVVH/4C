@@ -1,0 +1,283 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f0f0f0; /* Color de fondo ligero */
+    display: flex;
+    justify-content: center;
+}
+
+/* Aumento de ancho general: de 900px a 1100px */
+.contenedor {
+    width: 1100px; 
+    background-color: white;
+}
+
+/* --- Estilos del Encabezado (Header) --- */
+header {
+    background-color: #55acee; /* Azul */
+    color: white;
+    padding: 15px 30px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid black; 
+}
+
+.encabezado-izquierda {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+}
+
+header h1 {
+    font-size: 2.5em; 
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+header nav a.activo {
+    font-weight: bold;
+    color: #000; 
+    border-bottom: 2px solid #000;
+}
+
+.encabezado-derecha {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.alerta-san-jose {
+    color: white; 
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header select {
+    padding: 7px 10px; 
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+/* --- Estilos del Contenido Principal --- */
+main {
+    padding: 30px; 
+    min-height: 500px; /* Altura mínima aumentada para alargar los cuadros */
+}
+
+/* Título de la ciudad y el separador */
+.info-ciudad {
+    border-bottom: 3px solid black;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.info-ciudad h2 {
+    font-size: 3em; 
+    font-weight: normal;
+}
+
+/* Contenedor de Tarjetas */
+.tarjetas-clima {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; 
+}
+
+.tarjeta {
+    flex: 1;
+    background-color: #eeeeee; 
+    padding: 30px 15px; 
+    min-height: 350px; 
+    text-align: center;
+    border: 2px solid #ccc;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15); 
+}
+
+.tarjeta h3 {
+    font-size: 1.8em; 
+    margin-bottom: 15px;
+}
+
+/* MODIFICACIÓN CLAVE: Iconos de clima redondeados (Círculo Blanco) */
+.icono-clima {
+    width: 90px; 
+    height: 90px;
+    margin: 20px auto; /* Centrado y margen */
+    
+    /* PROPIEDADES PARA REDONDEAR EL FONDO */
+    border-radius: 50%; /* Esto crea la forma circular */
+    background-color: white; /* Esto define el fondo blanco redondeado */
+    padding: 10px; /* Espacio interno alrededor del icono */
+    border: 3px solid black; /* Borde al círculo para destacar */
+    /* Aseguramos que la imagen se muestre como un bloque para centrarla correctamente */
+    display: block; 
+}
+
+.descripcion {
+    font-size: 1.3em;
+    margin-bottom: 30px; 
+}
+
+.temperaturas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.5em; 
+}
+
+.alta {
+    color: #cc0000; 
+    font-weight: bold;
+}
+
+.baja {
+    color: #0000cc; 
+}
+
+/* --- Estilos del Mensaje de Cookie (Cookie Banner) --- */
+.contenedor-banner-cookie {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.banner-cookie {
+    width: 1100px; 
+    max-width: 95%; 
+    margin: 0 auto;
+    background-color: #eeeeee; 
+    border: 3px solid black; 
+    box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.2); 
+    padding: 20px 30px; 
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+}
+
+.icono-cookie { 
+    width: 60px; 
+    height: 60px;
+}
+
+.texto-cookie {
+    flex-grow: 1;
+    font-size: 1.1em; 
+}
+
+.texto-cookie h3 {
+    font-size: 1.5em; 
+    margin-bottom: 7px;
+}
+
+.texto-cookie a {
+    color: #55acee;
+}
+
+.boton-cookie {
+    background-color: #55acee;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; 
+    border: 3px solid black;
+    box-shadow: 3px 3px 0 black;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Lógica de Ocultar Cookie con CSS :target */
+#cerrar-cookie:target + .contenedor-banner-cookie {
+    display: none;
+}
+
+/* --- Estilos del Modal de Alerta (Loading Alert) --- */
+.envoltura-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    display: none; 
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+#alerta-modal:target {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    justify-content: center; 
+    align-items: center;
+}
+
+.contenido-modal {
+    background-color: white;
+    width: 350px; 
+    padding-top: 25px;
+    padding-bottom: 0;
+    border: 3px solid black;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.contenido-modal p {
+    font-size: 1.2em;
+    margin-bottom: 7px;
+}
+
+.caja-alerta {
+    border-top: 2px solid black; 
+    padding: 20px 0 15px;
+}
+
+.caja-alerta p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.boton-alerta {
+    background-color: #55acee;
+    color: white;
+    text-decoration: none;
+    padding: 8px 30px;
+    border: 3px solid black;
+    box-shadow: 3px 3px 0 black;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.superposicion-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

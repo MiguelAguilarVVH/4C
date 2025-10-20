@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoClima</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <header>
+            <div class="encabezado-izquierda">
+                <h1>DojoClima</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="activo">Burbank</a></li>
+                        <li><a href="#">Chicago</a></li>
+                        <li><a href="#">Dallas</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="encabezado-derecha">
+                <label for="selector-temp">mostrar temperatura en</label>
+                <a href="#alerta-modal" class="alerta-san-jose">San Jose</a> 
+                <select id="selector-temp">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                </select>
+            </div>
+        </header>
+
+        <main>
+            <section class="info-ciudad">
+                <h2>San Jose</h2>
+            </section>
+
+            <section class="tarjetas-clima">
+                <div class="tarjeta">
+                    <h3>Hoy</h3>
+                    <img src="img/some_rain.png" alt="Icono de lluvia" class="icono-clima"> 
+                    <p class="descripcion">algo de lluvia</p>
+                    <p class="temperaturas">
+                        <span class="alta">24°</span>
+                        <span class="baja">18°</span>
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Mañana</h3>
+                    <img src="img/some_sun.png" alt="Icono de sol" class="icono-clima"> 
+                    <p class="descripcion">algo de sol</p>
+                    <p class="temperaturas">
+                        <span class="alta">27°</span>
+                        <span class="baja">19°</span>
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Viernes</h3>
+                    <img src="img/some_clouds.png" alt="Icono de nubes" class="icono-clima"> 
+                    <p class="descripcion">algo de nubes</p>
+                    <p class="temperaturas">
+                        <span class="alta">21°</span>
+                        <span class="baja">16°</span>
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Sábado</h3>
+                    <img src="img/some_sun.png" alt="Icono de sol" class="icono-clima"> 
+                    <p class="descripcion">algo de sol</p>
+                    <p class="temperaturas">
+                        <span class="alta">26°</span>
+                        <span class="baja">21°</span>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <div id="alerta-modal" class="envoltura-modal">
+            <a href="#" class="superposicion-modal"></a> 
+            <div class="contenido-modal">
+                <p>Esta página dice</p>
+                <div class="caja-alerta">
+                    <p>Cargando reporte del clima...</p>
+                    <a href="#" class="boton-alerta">OK</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mensaje-cookie" class="contenedor-banner-cookie">
+            <div class="banner-cookie">
+                <img src="img/cookie.png" alt="Icono de cookie" class="icono-cookie"> 
+                <div class="texto-cookie">
+                    <h3>¡Alto! Hora de galletas</h3>
+                    <p>Usamos cookies (totalmente no comestibles) para personalizar contenido y anuncios, para proporcionar funciones de redes sociales y para analizar nuestro tráfico. <a href="#">Leer más...</a></p>
+                </div>
+                <a href="#cerrar-cookie" class="boton-cookie">¡Acepto!</a> 
+            </div>
+        </div>
+
+        <div id="cerrar-cookie"></div> 
+
+    </div> </body>
+</html>
